@@ -51,7 +51,7 @@ docker container prune $(docker ps -q)
 docker ps -a
 ```
 
-![Вывод без контейнеров](/MyNotes/Tasks/Docker/img/ps.png)
+![Вывод без контейнеров](../img/ps.png)
 
 - Опционально можно удалить ненужные образы. Показать текущие образы:
 ```shell
@@ -80,7 +80,7 @@ docker run -d -p 8088:80 --name welcome-to-docker docker/welcome-to-docker
 Открыл в браузере http://localhost:8088
 
 **Результат:**
-![Веб-интерфейс Welcome to Docker](/MyNotes/Tasks/Docker/img/run.png)
+![Веб-интерфейс Welcome to Docker](../img/run.png)
 
 ## Шаг 3: Подключение к контейнеру
 Зайдя внутрь контейнера с помощь
@@ -101,10 +101,10 @@ top
 ```
 
 **Результат uname -a:**
-![Информация о системе](/MyNotes/Tasks/Docker/img/uname.png)
+![Информация о системе](../img/uname.png)
 
 **Результат top:**
-![Диспетчер задач внутри контейнера](/MyNotes/Tasks/Docker/img/top.png)
+![Диспетчер задач внутри контейнера](../img/top.png)
 
 ## Шаг 5: Обновление пакетов
 Обновил список пакетов и сами пакеты (в данном образе используется Alpine Linux с пакетным менеджером `apk`):
@@ -114,7 +114,7 @@ apk update && apk upgrade
 ```
 
 **Результат:**
-![Обновление пакетов](/MyNotes/Tasks/Docker/img/update.png)
+![Обновление пакетов](../img/update.png)
 
 ## Шаг 6: Установка дополнительного ПО
 Установил программу `fastfetch` (современная альтернатива `neofetch` для вывода информации о системе):
@@ -124,7 +124,7 @@ apk add fastfetch
 ```
 
 **Результат установки:**
-![Установка fastfetch](/MyNotes/Tasks/Docker/img/fastfetch.png)
+![Установка fastfetch](../img/fastfetch.png)
 
 ## Шаг 7: Запуск fastfetch
 Запустил установленную программу:
@@ -134,5 +134,5 @@ fastfetch
 ```
 
 **Результат:**
-![Fastfetch в действии](/MyNotes/Tasks/Docker/img/fast.png)
+![Fastfetch в действии](../img/fast.png)
 
