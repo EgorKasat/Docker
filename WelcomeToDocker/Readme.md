@@ -18,7 +18,7 @@ netstat -tuln | grep :8088
 docker version
 ```
 
-![Скрин версии Docker](../img/version.png)
+![Скрин версии Docker](../img1/version.png)
 
 > Готовые образы берутся из сторонних источников: **Docker Hub** или другие
 
@@ -51,7 +51,7 @@ docker container prune $(docker ps -q)
 docker ps -a
 ```
 
-![Вывод без контейнеров](../img/ps.png)
+![Вывод без контейнеров](../img1/ps.png)
 
 - Опционально можно удалить ненужные образы. Показать текущие образы:
 ```shell
@@ -80,7 +80,7 @@ docker run -d -p 8088:80 --name welcome-to-docker docker/welcome-to-docker
 Открыл в браузере http://localhost:8088
 
 **Результат:**
-![Веб-интерфейс Welcome to Docker](../img/run.png)
+![Веб-интерфейс Welcome to Docker](../img1/run.png)
 
 ## Шаг 3: Подключение к контейнеру
 Зайдя внутрь контейнера с помощь
@@ -101,10 +101,10 @@ top
 ```
 
 **Результат uname -a:**
-![Информация о системе](../img/uname.png)
+![Информация о системе](../img1/uname.png)
 
 **Результат top:**
-![Диспетчер задач внутри контейнера](../img/top.png)
+![Диспетчер задач внутри контейнера](../img1/top.png)
 
 ## Шаг 5: Обновление пакетов
 Обновил список пакетов и сами пакеты (в данном образе используется Alpine Linux с пакетным менеджером `apk`):
@@ -114,7 +114,7 @@ apk update && apk upgrade
 ```
 
 **Результат:**
-![Обновление пакетов](../img/update.png)
+![Обновление пакетов](../img1/update.png)
 
 ## Шаг 6: Установка дополнительного ПО
 Установил программу `fastfetch` (современная альтернатива `neofetch` для вывода информации о системе):
@@ -124,7 +124,7 @@ apk add fastfetch
 ```
 
 **Результат установки:**
-![Установка fastfetch](../img/fastfetch.png)
+![Установка fastfetch](../img1/fastfetch.png)
 
 ## Шаг 7: Запуск fastfetch
 Запустил установленную программу:
@@ -134,5 +134,5 @@ fastfetch
 ```
 
 **Результат:**
-![Fastfetch в действии](../img/fast.png)
+![Fastfetch в действии](../img1/fast.png)
 
