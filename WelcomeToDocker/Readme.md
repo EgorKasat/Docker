@@ -136,3 +136,34 @@ fastfetch
 **Результат:**
 ![Fastfetch в действии](../img1/fast.png)
 
+
+
+
+
+**Portainer**
+![Portainer](../img1/Portaine.png)
+
+**Для windows**
+```shell
+docker run -d ^
+  --name portainer ^
+  -p 9000:9000 ^
+  -p 9443:9443 ^
+  -v /var/run/docker.sock:/var/run/docker.sock ^
+  -v portainer_data:/data ^
+  --restart unless-stopped ^
+  portainer/portainer-ce:latest
+```
+**Для Linux WSL Mac**
+```shell
+docker run -d \
+  --name portainer \
+  -p 9000:9000 \
+  -p 9443:9443 \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v portainer_data:/data \
+  --restart unless-stopped \
+  portainer/portainer-ce:latest
+```
+
+
